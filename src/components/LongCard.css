@@ -1,0 +1,107 @@
+.longcard {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  max-height: 260px;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  color: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top row */
+.education_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 20px 0 20px;
+}
+
+.education_title {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.education_info > p {
+  font-size: 14px;
+}
+/* College / Institute name */
+.education_info > div > .edu_name {
+  color: #60a5fa;
+  font-size: 15x;
+  margin-top: 0;
+}
+
+/* Details */
+.education_detail {
+  margin-left: 20px;
+}
+.education_detail ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education_detail li {
+  font-size: 16px;
+}
+.education_info p,
+.education_detail li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Marker */
+.education_detail ul li::marker {
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 768px) {
+  .education_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education_title {
+    font-size: 16px;
+  }
+  .edu_name {
+    font-size: 16px;
+  }
+
+  .education_detail li {
+    font-size: 13px;
+  }
+
+  .longcard {
+    padding: 14px;
+    border-radius: 16px;
+  }
+}
+.longcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
+  );
+  pointer-events: none;
+}

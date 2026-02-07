@@ -1,0 +1,98 @@
+#education {
+  height: 100vh;
+  background: #0f172a;
+}
+
+/* Main container */
+.education-container {
+  display: flex;
+  flex-direction: row; /* force side-by-side */
+  align-items: stretch;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE → cards */
+.edu-left {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* RIGHT SIDE → heading */
+.edu-right {
+  flex: 0 0 20%; /* 🔑 restrict width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-right .heading {
+  margin: 0; /* 🔑 VERY important */
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  #education {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .education-container {
+    flex-direction: column-reverse;
+    padding: 24px;
+  }
+
+  .edu-left,
+  .edu-right {
+    flex: 0 0 100%;
+    max-height: none;
+  }
+
+  .edu-right {
+    justify-content: flex-start;
+  }
+
+  .edu-right .heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+/* =========================
+   MOBILE (<= 640px)
+   ========================= */
+@media (max-width: 640px) {
+  .education-container {
+    padding: 16px;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .edu-left,
+  .edu-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .edu-right {
+    font-size: 28px;
+    order: -1; /* heading on top */
+    margin-bottom: 20px;
+  }
+
+  .edu-left {
+    gap: 16px;
+  }
+}
