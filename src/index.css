@@ -6,9 +6,32 @@ body {
   min-height: 100vh;
 }
 #top-button {
-  color: #fff;
   position: fixed;
-  right: 10px;
-  bottom: 5px;
+  right: 20px;
+  bottom: 20px;
   z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  padding: 8px;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+#top-button.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#top-button a {
+  color: #fff;
 }
