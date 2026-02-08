@@ -14,12 +14,13 @@ const Education = () => {
               edu_title={edu.edu_title}
               edu_date={edu.edu_date}
               edu_name={edu.edu_name}
-              edu_details={edu.edu_details}
             />
           ))}
         </div>
         <div className="edu-right">
-          <h1 className="heading">Education</h1>
+          <h1 className="heading">
+            Education <span></span>
+          </h1>
         </div>
       </div>
     </div>

@@ -1,27 +1,27 @@
+import { ArrowBigUp } from "lucide-react";
 import About from "./components/About";
+import Certificate from "./components/Certificate";
 import Education from "./components/Education";
+import Footer from "./components/Footer";
 import Name from "./components/Name";
 import Navbar from "./components/Navbar";
+import Project from "./components/Project";
 
 function App() {
   return (
     <>
+      {/* <div id="top-button">
+        <a href="#home">
+          <ArrowBigUp className="up-button" size={50} />
+        </a>
+      </div> */}
       <Navbar />
-      {/* NAME SECTION */}
       <Name />
-
-      {/* ABOUT SECTION */}
       <About />
-
       <Education />
-      <div
-        id="projects"
-        style={{ height: "200vh", background: "#0f2a15" }}
-      ></div>
-      <div
-        id="contact"
-        style={{ height: "200vh", background: "#2a290f" }}
-      ></div>
+      <Project />
+      <Certificate />
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,5 @@
 #education {
-  height: 100vh;
+  height: auto;
   background: #0f172a;
 }
 
@@ -19,7 +19,7 @@
 
 /* LEFT SIDE → cards */
 .edu-left {
-  flex: 0 0 80%;
+  flex: 0 0 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -30,20 +30,28 @@
 
 /* RIGHT SIDE → heading */
 .edu-right {
-  flex: 0 0 20%; /* 🔑 restrict width */
+  flex: 0 0 50%; /* 🔑 restrict width */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .edu-right .heading {
-  margin: 0; /* 🔑 VERY important */
+  margin: 0 auto; /* 🔑 VERY important */
   font-size: 48px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1;
   text-align: center;
 }
+
+.edu-right .heading span {
+  width: 60px;
+  height: 2px;
+  border-bottom: 2px solid #38bdf8;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   #education {
     height: auto;
@@ -68,6 +76,7 @@
   .edu-right .heading {
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: center;
   }
 }
 
@@ -94,5 +103,8 @@
 
   .edu-left {
     gap: 16px;
+  }
+  .edu-right .heading {
+    text-align: center;
   }
 }

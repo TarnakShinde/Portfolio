@@ -8,23 +8,23 @@ const Name = () => {
         <div className="home-container">
           <div className="left">
             <h2>Hello 👋</h2>
-            <p>
+            <p className="typing-name">
               I'm <span>Tarnak Shinde</span>
             </p>
             <ul className="links">
               <li>
                 <a href="mailto:someone@example.com" target="_blank">
-                  <Mail size={40} />
+                  <Mail className="name-icon" />
                 </a>
               </li>
               <li>
                 <a href="https://linkedin.com/in/tarnakshinde" target="_blank">
-                  <Linkedin size={40} />
+                  <Linkedin className="name-icon" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/TarnakShinde" target="_blank">
-                  <Github size={40} />
+                  <Github className="name-icon" />
                 </a>
               </li>
             </ul>

@@ -14,19 +14,11 @@ const About = () => {
           </div>
           <div className="about-right">
             <div className="info">
-              Dynamic entry-level Full-Stack Developer with expertise in
-              Next.js, ReactJS, Node.js, Supabase, and PostgreSQL, complemented
-              by hands-on experience in developing full-stack web applications.
-              Notable projects include Shopify, an e-commerce platform featuring
-              robust user authentication and product management capabilities,
-              and Smart Brain, an innovative facial recognition application
-              leveraging APIs and cloud databases. Proficient in API integration
-              and database management, with the ability to translate client
-              requirements into scalable and effective solutions. Additionally
-              knowledgeable in basic Python, enhancing versatility across
-              different development environments. Committed to continuous
-              learning and adapting to emerging technologies to drive project
-              success.
+              Web developer with experience in React, Next.js, Node.js, and
+              Express.js, focused on building responsive frontend interfaces and
+              scalable backend APIs. Familiar with MySQL, PostgreSQL, Supabase,
+              version control using Git/GitHub, API integration, and programming
+              with Java and Python.
             </div>
           </div>
         </div>

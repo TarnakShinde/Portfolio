@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,9 +27,6 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
             <a href="#about">About</a>
           </li>
           <li>
@@ -38,7 +36,7 @@ const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#certificate">Certificate</a>
           </li>
         </ul>
 
@@ -47,9 +45,7 @@ const Navbar = () => {
           className={`hamburger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span />
-          <span />
-          <span />
+          {menuOpen ? <X size={25} /> : <Menu size={25} />}
         </div>
       </nav>
       {/* Mobile Menu */}
@@ -57,11 +53,6 @@ const Navbar = () => {
         <>
           <div className="overlay" onClick={() => setMenuOpen(false)} />
           <div className="mobile-menu">
-            <p>
-              <a href="#home" onClick={() => setMenuOpen(false)}>
-                Home
-              </a>
-            </p>
             <p>
               <a href="#about" onClick={() => setMenuOpen(false)}>
                 About
@@ -79,7 +70,7 @@ const Navbar = () => {
             </p>
             <p>
               <a href="#contact" onClick={() => setMenuOpen(false)}>
-                Contact
+                Certificate
               </a>
             </p>
           </div>

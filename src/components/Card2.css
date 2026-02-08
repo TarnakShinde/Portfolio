@@ -1,0 +1,113 @@
+.card2-container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card2-wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+/* CARD */
+.card2 {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px; /* responsive limit */
+}
+
+/* IMAGE */
+.card2 img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.8s;
+}
+
+/* OVERLAY */
+.card2-overlay {
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* TEXT */
+.card2-overlay h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card2-overlay p {
+  font-size: 12px;
+}
+
+/* HOVER EFFECT */
+.card2:hover img {
+  transform: scale(1.15);
+}
+
+.card2:hover .card2-overlay {
+  height: 100%;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .card2 img {
+    height: 180px;
+  }
+
+  .card2-overlay h3 {
+    font-size: 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .card2 {
+    max-width: 100%;
+  }
+
+  .card2 img {
+    height: 200px;
+  }
+
+  .card2-overlay h3 {
+    font-size: 18px;
+  }
+
+  .card2-overlay p {
+    font-size: 12px;
+  }
+}
