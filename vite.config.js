@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "https://github.com/TarnakShinde/Portfolio.git",
+  base: "/Portfolio/",
 });
