@@ -1,18 +1,98 @@
-# React + Vite
+# ✨ Personal Portfolio — Tarnak Shinde
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  
 
-Currently, two official plugins are available:
+Welcome to my **personal developer portfolio** 🚀
+This website showcases my **projects, skills, certifications, and journey as a developer**, designed with a clean UI, smooth animations, and a focus on user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👋 About Me
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Hi, I’m **Tarnak Shinde**, a passionate **Frontend / Full-Stack Developer** who enjoys building modern web applications and solving real-world problems through code.
 
-Note: This will impact Vite dev & build performances.
+* 💻 Focused on **Web Development & UI Design**
+* 🎓 Final-year student
+* 🚀 Constantly learning new technologies
+* 🎯 Interested in building scalable and user-friendly applications
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Skills & Technologies
+
+### Front-end
+
+* React.js
+* Next.js (App Router)
+* HTML5, CSS3, JavaScript
+* Tailwind CSS
+
+### Back-end & Tools
+
+* Supabase (Auth & Database)
+* Node.js (Basics)
+* MySQL / PostgreSQL
+* JWT Authentication
+
+### Other
+
+* Git & GitHub
+* REST APIs
+* Responsive Design
+* UI/UX Fundamentals
+
+---
+
+## 📂 Featured Projects
+
+### 🛒 ShopiFly — E-Commerce Web App
+
+* Full-stack academic project
+* Authentication with Supabase
+* Cart, favorites, checkout system
+* Order confirmation via email
+* AI-powered chat bot integration
+
+> 👉 More projects are available inside the portfolio
+
+---
+
+## 🎨 Portfolio Features
+
+* ✨ Modern & minimal UI
+* 📱 Fully responsive design
+* 🎥 Smooth animations & transitions
+* 🧭 Easy navigation
+* 🌙 Clean color palette
+
+---
+
+## 🚀 Getting Started (For Developers)
+
+```bash
+git clone https://github.com/Tarnak Shinde/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
+
+---
+
+## 📬 Contact Me
+
+* 📧 Email: [shindetarnak@gmail.com](mailto:shindetarnak@gmail.com)
+* 💼 LinkedIn: [https://linkedin.com/in/tarnakshinde](https://linkedin.com/in/tarnakshinde)
+* 🐙 GitHub: [https://github.com/TarnakShinde](https://github.com/TarnakShinde)
+
+---
+
+## 🌟 Acknowledgements
+
+Thanks for visiting my portfolio!
+If you like my work, feel free to **connect or reach out** 🙌
+
+---
+
+> *Designed & developed with passion 💙*
